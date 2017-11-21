@@ -1,7 +1,6 @@
 package com.rest.helpmethods;
 
 import com.rest.commonUtils.GetStatus;
-import com.rest.testcase.SetUp;
 
 public class GetTopic extends SetUp{
 	GetStatus getStatus = new GetStatus();

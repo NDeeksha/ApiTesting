@@ -5,7 +5,7 @@ import org.testng.Assert;
 import io.restassured.response.Response;
 import atu.testng.reports.ATUReports;
 
-import com.rest.testcase.SetUp;
+import com.rest.helpmethods.SetUp;
 
 public class GetStatus extends SetUp{
 

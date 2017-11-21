@@ -6,6 +6,7 @@ import org.testng.annotations.Test;
 import com.rest.commonUtils.CreateJsonTemplate;
 import com.rest.commonUtils.GetStatus;
 import com.rest.helpmethods.GetTopic;
+import com.rest.helpmethods.SetUp;
 
 public class SimpleRestTest extends SetUp{
 	GetStatus getStatus = new GetStatus();

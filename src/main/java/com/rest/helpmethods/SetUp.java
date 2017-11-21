@@ -1,4 +1,4 @@
-package com.rest.testcase;
+package com.rest.helpmethods;
 
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
@@ -6,7 +6,7 @@ import io.restassured.specification.RequestSpecification;
 
 import org.testng.annotations.BeforeTest;
 
-import com.rest.testcase.SetUp;
+import com.rest.helpmethods.SetUp;
 
 import atu.testng.reports.ATUReports;
 import atu.testng.reports.utils.Utils;
