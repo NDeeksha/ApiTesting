@@ -13,7 +13,7 @@ public class GetStatus extends SetUp{
 	public void getStatusCode(Response response, String method){
 		
 		System.out.println(response.getStatusLine());
-		if(response.statusLine().contains("200") || response.statusLine().contains("201") || response.statusLine().contains("204")) {
+		if(response.statusLine().contains("203") || response.statusLine().contains("201") || response.statusLine().contains("204")) {
 			ATUReports.add(method+ " : Success", "", true);
 		}
 		else{
