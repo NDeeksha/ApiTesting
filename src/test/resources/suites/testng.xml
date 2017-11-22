@@ -2,12 +2,20 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Suite">
 	<test name="Get Sample Restapi Test">
+	 <method-selectors>
+			<method-selector>
+				<script language="beanshell"><![CDATA[
+         			groups.containsKey(System.getProperty("testSuite"))
+       			]]></script>
+			</method-selector>
+		</method-selectors>
+		
 		<classes>
 			<class name="com.rest.testcase.SimpleRestTest" />
 		</classes>
 	</test> <!-- Test -->
 
- <listeners>
+	<listeners>
 		<listener class-name="atu.testng.reports.listeners.ATUReportsListener"></listener>
 		<listener class-name="atu.testng.reports.listeners.ConfigurationListener"></listener>
 		<listener class-name="atu.testng.reports.listeners.MethodListener"></listener>
