@@ -6,6 +6,7 @@ import io.restassured.specification.RequestSpecification;
 
 import org.testng.annotations.BeforeTest;
 
+import com.rest.commonUtils.FileLoader;
 import com.rest.helpmethods.SetUp;
 
 import atu.testng.reports.ATUReports;
@@ -18,7 +19,7 @@ public class SetUp {
 	protected RequestSpecification httpRequest = RestAssured.given();
 
 	{	
-		System.setProperty("atu.reporter.config", "D:\\E\\luna\\rest\\src\\test\\resources\\atu.properties");
+		System.setProperty("atu.reporter.config", FileLoader.getFilePath("config/", "atu.properties" ));
 	}
 
 // 	@BeforeTest
